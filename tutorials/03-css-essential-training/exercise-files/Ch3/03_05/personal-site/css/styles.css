@@ -13,6 +13,14 @@ Off-white     #f6f6f6
 /* 
   https://www.paulirish.com/2012/box-sizing-border-box-ftw/
 */
+
+
+html {
+  box-sizing: border-box;
+}
+*, *:before, *:after {
+  box-sizing: inherit;
+}
 html {
     box-sizing: border-box;
 }
@@ -20,8 +28,12 @@ html {
     box-sizing: inherit;
 }
 
+html, body {
+    height: 100%;
+}
 body {
-    background: #f6f6f6; 
+    background: #f6f6f6;
+    margin: 0; 
 }
 
 /* links */
@@ -44,6 +56,11 @@ footer a:hover {
     text-decoration: none;
 }
 
+.content-wrapper {
+    margin: 0 auto;
+    padding: 30px;
+    max-width: 900px;
+}
 
 /* HOME
 ------------------------------------*/
@@ -58,7 +75,14 @@ footer a:hover {
 
 /* RESUME
 ------------------------------------*/
+.resume header::before {
+ background: url(../images/bg-home-office-studio.jpg) center;
+ background-size: cover;
+ content: "";
+ display: block;
+ height: 357px;
 
+}
 /* Profile
 ------------------------------------*/
 
