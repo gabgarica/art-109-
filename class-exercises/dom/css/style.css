@@ -40,10 +40,9 @@ header {
 }
 
 main {
-    max-width: 800px;
-    margin: 50px auto;
+       
 }
 
-p {
-    margin-top: 20px;
+.image-div {
+    display: inline-block;
 }
