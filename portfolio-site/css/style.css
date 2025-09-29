@@ -15,6 +15,7 @@ Off-white     #f6f6f6
 */
 html {
   box-sizing: border-box;
+  font-size: 62.5%; /* set default to 10px */
 }
 *, *:before, *:after {
   box-sizing: inherit;
@@ -26,8 +27,25 @@ html, body {
 body {
     background: #f6f6f6;
     margin: 0; 
+    font-family: 'Open Sans', sans-serif;
+    font-size: 1.5rem;
+    line-height: 1.4;
 }
-
+h1, h2, h3 {
+   font-family: "Rock Salt", cursive;
+   font-weight: 400;
+    /* margin: 0;*/
+}
+h1 {
+    font-size: 7rem;
+    line-height: 0.85;
+}
+h2 { 
+    font-size: 3.6rem;
+}
+h3 {
+    font-size: 2.4rem;
+}
 /* links */
 a {
     color: #3c8453;
@@ -46,6 +64,10 @@ footer a:hover {
     background: #3c8453;
     color: #f6f6f6;
     text-decoration: none;
+    text-transform: uppercase;
+    font-size: 1.2rem;
+    display: inline-block;
+    padding: 7px;
 }
 
 .content-wrapper {
