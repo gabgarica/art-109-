@@ -1,14 +1,14 @@
 // image array 4 annimation //
 const images = [
-  './assets/image-content/image-0.png',
-  './assets/image-content/image-1.png',
-  './assets/image-content/image-2.png',
-  './assets/image-content/image-3.png',
-  './assets/image-content/image-4.png',
-  './assets/image-content/image-5.png',
-  './assets/image-content/image-6.png',
-  './assets/image-content/image-7.png',
-  './assets/image-content/image-8.png',
+  './images/image-content/image-0.png',
+  './images/image-content/image-1.png',
+  './images/image-content/image-2.png',
+  './images/image-content/image-3.png',
+  './images/image-content/image-4.png',
+  './images/image-content/image-5.png',
+  './images/image-content/image-6.png',
+  './images/image-content/image-7.png',
+  './images/image-content/image-8.png',
 ];
 
 // Get HTML elements - Dom - Connect to the elements we need to change

@@ -13,15 +13,15 @@
     
     /* Images */
     --image-path-background: url('#');
-    --image-path-content: url('assets/image-content/image-0.png');
-    --image-path-content: url('assets/image-content/image-1.png');
-    --image-path-content: url('assets/image-content/image-2.png');
-    --image-path-content: url('assets/image-content/image-3.png');
-    --image-path-content: url('assets/image-content/image-4.png');
-    --image-path-content: url('assets/image-content/image-5.png');
-    --image-path-content: url('assets/image-content/image-6.png');
-    --image-path-content: url('assets/image-content/image-7.png');
-    --image-path-content: url('assets/image-content/image-8.png');
+    --image-path-content: url('images/image-content/image-0.png');
+    --image-path-content: url('images/image-content/image-1.png');
+    --image-path-content: url('images/image-content/image-2.png');
+    --image-path-content: url('images/image-content/image-3.png');
+    --image-path-content: url('images/image-content/image-4.png');
+    --image-path-content: url('images/image-content/image-5.png');
+    --image-path-content: url('images/image-content/image-6.png');
+    --image-path-content: url('images/image-content/image-7.png');
+    --image-path-content: url('images/image-content/image-8.png');
 
      /* Web pop-up */
     /* Fonts */
