@@ -81,8 +81,14 @@ footer a:hover {
 
 /* HOME
 ------------------------------------*/
+#canvas {
+  position: absolute;
+  z-index: 2;
+  pointer-events: none;
+}
+
 .home {
-    background: url(/portfolio-site/images/bg-home-office-studio.jpg) no-repeat;
+    background: url(#) no-repeat;
     background-size: cover;
     display: flex;
     flex-direction: column;
