@@ -25,9 +25,9 @@ html, body {
     height: 100%;
 }
 body {
-    background: #f6f6f6;
+    background: #687785;
     margin: 0; 
-    font-family: 'Open Sans', sans-serif;
+    font-family: 'Open Sans', 'sans-serif';
     font-size: 1.5rem;
     line-height: 1.4;
 }
@@ -37,8 +37,8 @@ body {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    padding: 10px 20px;
-    background-color: #9053aa;
+    padding: 7x 10px;
+    background-color: clear;
     /* Green background */
     color: #fff;
 }
@@ -170,7 +170,7 @@ footer a:hover {
 /* HOME
 ------------------------------------*/
 .home {
-    background: url(/portfolio-site/images/bg-home-office-studio.jpg) no-repeat;
+    background: url(/portfolio-site-responsive-menu/images/background.png) no-repeat;
     background-size: cover;
     display: flex;
     flex-direction: column;
@@ -201,7 +201,7 @@ footer a:hover {
  height: 357px;
 
  .resume-section {
-    margin-bottom: 150px;
+    margin-bottom: 175px;
  }
  .resume-section h2 {
     border-bottom: 2px dashed #d3d4d6 ;
@@ -236,7 +236,7 @@ footer a:hover {
 /* Projects
 ------------------------------------*/
 .project-item {
-    margin: 20rem 0;
+    margin: 15rem 0;
 }
 .project-item img {
     width: 300px;
@@ -299,7 +299,7 @@ footer a:hover {
 /* FOOTER
 ------------------------------------*/
 footer {
-    background: #222;
+    background: #3d263e;
     color: #d3d4d6;
 }
 .socials {
