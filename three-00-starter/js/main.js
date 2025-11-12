@@ -21,23 +21,33 @@ function init() {
     light.position.set(1,1,5);
     scene.add(light);
 
- scene = new THREE.Scene();
- camera = new THREE.PerspectiveCamera(75, window.innerWidth / window.innerHeight, 0.1, 1000);
+    const helper = new THREE.DirectionalLightHelper( light, 5 );
+    scene.add( helper );
+    
+    const lightLeft = new THREE.DirectionalLight(0xff00000, 3 );
+    lightLeft.position.set(-3,4,5);
+    scene.add(lightLeft);
 
- renderer = new THREE.WebGLRenderer({antialias: true });
-renderer.setSize(window.innerWidth, window.innerHeight);
-document.body.appendChild(renderer.domElement);
+    const helperLeft = new THREE.DirectionalLightHelper( lightLeft, 5 );
+    scene.add( helper );
+    
+    scene = new THREE.Scene();
+    camera = new THREE.PerspectiveCamera(75, window.innerWidth / window.innerHeight, 0.1, 1000);
+    
+    renderer = new THREE.WebGLRenderer({antialias: true });
+    renderer.setSize(window.innerWidth, window.innerHeight);
+    document.body.appendChild(renderer.domElement);
 
-const geometry = new THREE.BoxGeometry( 2, 2, 2 );
-//const material = new THREE.MeshBasicMaterial( { color: 0x0000ff } );
+const geometry = new THREE.BoxGeometry( 1, 1, 1);
+//const material = new THREE.MeshStandardMaterial( { color: 0x0000ff } );
 
 //const geometry = new THREE.CapsuleGeometry( 1, 1, 4, 8, 1 );
 
-//const texture = new THREE.TextureLoader().load('textures/check.jpg');
-//const material = new THREE.MeshBasicMaterial( { map: texture } );
+const texture = new THREE.TextureLoader().load('textures/check.jpg');
+const material = new THREE.MeshStandardMaterial( { map: texture } );
 
 //cube = new THREE.Mesh( geometry, material );
-//scene.add( cube );
+scene.add( cube );
 
 camera.position.z = 5;
  
@@ -68,7 +78,7 @@ animate();
 const controls = new OrbitControls(camera, renderer.domElement);
 const loader = new GLTFLoader(); // to load 3d models
 
-loader.load('assets/dog_shiny.gltf', function (gltf) {
+loader.load('assets/dog_shiny.gltf', function(gltf) {
     const dog = gltf.scene;
     scene.add(dog);
     dog.scale.set(2,2,2);
