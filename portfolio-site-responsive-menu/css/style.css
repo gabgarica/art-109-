@@ -48,6 +48,7 @@ body {
     color: #fff;
     text-decoration: none;
     font-size: 20px;
+    padding: 10px 10px;
 }
 
 /* Navigation links styling */
@@ -167,10 +168,10 @@ footer a:hover {
     max-width: 900px;
 }
 
-/* HOME
+/* HOME about 
 ------------------------------------*/
 .home {
-    background: url(/portfolio-site-responsive-menu/images/background.png) no-repeat;
+    background: url(../images/yo-resize.jpeg) no-repeat;
     background-size: cover;
     display: flex;
     flex-direction: column;
@@ -194,7 +195,7 @@ footer a:hover {
 /* RESUME
 ------------------------------------*/
 .resume header::before {
- background: url(../images/bg-home-office-studio.jpg) center;
+ background: url(../images/background.png) center;
  background-size: cover;
  content: "";
  display: block;
