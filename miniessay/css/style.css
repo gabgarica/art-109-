@@ -1,5 +1,5 @@
 header {
-    background-color: rgb(213, 208, 205);
+    background-color: rgb(245, 237, 198);
     background-size: cover;
     background-repeat:none;
     background-attachment: fixed;
@@ -8,8 +8,9 @@ header {
 .main-content {
     position: relative;
         background-image: url('./photos/gl.png');
-        background-size: 200pc;
+        background-size: 200px;
         width: 1000px;
+        height: 850px;
         margin: 10px auto;
         padding: 40px;
         border: 10px dashed #523e30;
@@ -36,18 +37,20 @@ header {
 }
 .section-large{
     width: 650px;
-    height: 250px;
+    height: 850px;
     background-image: url();
     color:rgb(28, 26, 23);
     overflow-y: scroll;
-
     font-family: "Science Gothic", sans-serif;
-  font-optical-sizing: auto;
-  font-weight: weight;
-  font-style: normal;
-  font-variation-settings:
+    font-optical-sizing: auto;
+    font-weight: weight;
+    font-style: normal;
+    font-variation-settings:
     "slnt" 0,
     "wdth" 100,
     "CTRS" 0;
 
+}
+.header-text {
+    allign-text: left;
 }
