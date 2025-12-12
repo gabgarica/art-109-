@@ -1,11 +1,12 @@
 const images = [
-  './images/gif/purp-0.png',
-  './images/gif/purp-1.png',
-  './images/gif/purp-2.png',
-  './images/gif/purp-3.png',
-  './images/gif/purp-4.png',
-  './images/gif/purp-5.png',
-  './images/gif/purp-6.png',
+  './images/gifs/yell-0.png',
+  './images/gifs/yell-1.png',
+  './images/gifs/yell-2.png',
+  './images/gifs/yell-3.png',
+  './images/gifs/yell-4.png',
+  './images/gifs/yell-5.png',
+  './images/gifs/yell-6.png',
+ 
 ];
 
 const imageContent = document.querySelector('.image-content'); 
