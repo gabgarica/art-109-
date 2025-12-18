@@ -1,93 +1,10 @@
-:root {
-    /* Colors */
-    --color-page-background: #590041;
-    --color-main-container-background: #e87dcb;
-    --color-inner-container-background: #FFF7F4;
-    --color-border: #a10d7a;
-    --color-button-background: #FFF;
-    --color-heading-text: #e87dcb; /* Updated heading color for better visibility on dark background */
-    --color-button-text: #a10d7a;
-    --color-message-text: #a10d7a;
-
-    /* Fonts */
-    --font-family-main: "Pixelify Sans", sans-serif;
-    --font-size-large: 1.75rem;
-    --font-size-medium: 1.5635rem;
-
-    /* Border Radius */
-    --border-radius: 0.31269rem;
-
-    /* Border Width */
-    --border-width-main: 3px;
-    --border-width-inner: 3.413px;
-
-    /* Spacing */
-    --padding-container: 1rem;
-    --gap-grid: 1rem; /* New variable for grid spacing */
+canvas {
+    position: absolute;
+    top:0;
+    left:0;
+    z-index: -1;
 }
 
-/* Base styles for the entire page */
-body {
-    margin: 0;
-    padding: 0;
-    min-height: 100vh;
-    background-color: var(--color-page-background);
-    font-family: var(--font-family-main);
-    display: flex;
-    justify-content: center;
-    align-items: flex-start; /* Align content to the top */
-    color: white;
-}
-
-.page-wrapper {
-    width: 90%;
-    max-width: 1200px;
-    padding-top: 2rem;
-    padding-bottom: 2rem;
-}
-
-h1 {
-    color: var(--color-heading-text);
-    font-size: var(--font-size-large);
-    text-align: center;
-    margin-bottom: 2rem;
-}
-
-/* --- GRID STYLES --- */
-.gif-grid {
-    display: grid;
-    /* This creates a responsive grid: 
-       It automatically fits as many columns as possible (auto-fit)
-       with a minimum width of 200px and a maximum of 1fr per column. */
-    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
-    gap: var(--gap-grid);
-    padding: var(--padding-container);
-}
-
-.grid-item {
-    /* Uses main container styles for borders and background */
-    background: var(--color-main-container-background);
-    border: var(--border-width-main) solid var(--color-border);
-    border-radius: var(--border-radius);
-    overflow: hidden; /* Ensures the image stays within the rounded corners */
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
-    transition: transform 0.3s ease;
-}
-
-.grid-item:hover {
-    transform: scale(1.03); /* Simple hover effect */
-}
-
-.grid-item img {
-    width: 100%;
-    height: auto; /* Maintain aspect ratio */
-    display: block;
-    /* Optional: Ensure images fill the box nicely without distortion, might crop slightly */
-    /* object-fit: cover; 
-    aspect-ratio: 1 / 1; */ 
-}
-
-/* Cleanup: Remove original container styles that are no longer used for the grid layout */
-.container, .inner-container, header, .shrink-close-icons, .shrink-icon, .image-content, #main-button, .final-message {
-    display: none !important; 
+#play-button {
+    visibility: hidden;
 }
